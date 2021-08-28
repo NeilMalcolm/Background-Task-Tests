@@ -1,21 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/Users/neilmalcolm/Projects/BackgroundDownloadTests/BackgroundDownloadTests.iOS/BackgroundDownloadTests.iOS.csproj": {}
+    "C:\\Users\\Neil\\source\\repos\\NeilMalcolm\\Background-Task-Tests\\BackgroundDownloadTests.iOS\\BackgroundDownloadTests.iOS.csproj": {}
   },
   "projects": {
-    "/Users/neilmalcolm/Projects/BackgroundDownloadTests/BackgroundDownloadTests.iOS/BackgroundDownloadTests.iOS.csproj": {
+    "C:\\Users\\Neil\\source\\repos\\NeilMalcolm\\Background-Task-Tests\\BackgroundDownloadTests.iOS\\BackgroundDownloadTests.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/neilmalcolm/Projects/BackgroundDownloadTests/BackgroundDownloadTests.iOS/BackgroundDownloadTests.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\Neil\\source\\repos\\NeilMalcolm\\Background-Task-Tests\\BackgroundDownloadTests.iOS\\BackgroundDownloadTests.iOS.csproj",
         "projectName": "BackgroundDownloadTests.iOS",
-        "projectPath": "/Users/neilmalcolm/Projects/BackgroundDownloadTests/BackgroundDownloadTests.iOS/BackgroundDownloadTests.iOS.csproj",
-        "packagesPath": "/Users/neilmalcolm/.nuget/packages/",
-        "outputPath": "/Users/neilmalcolm/Projects/BackgroundDownloadTests/BackgroundDownloadTests.iOS/obj/",
+        "projectPath": "C:\\Users\\Neil\\source\\repos\\NeilMalcolm\\Background-Task-Tests\\BackgroundDownloadTests.iOS\\BackgroundDownloadTests.iOS.csproj",
+        "packagesPath": "C:\\Users\\Neil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Neil\\source\\repos\\NeilMalcolm\\Background-Task-Tests\\BackgroundDownloadTests.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/neilmalcolm/.config/NuGet/NuGet.Config"
+          "C:\\Users\\Neil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
@@ -26,8 +33,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "/Users/neilmalcolm/Projects/BackgroundDownloadTests/BackgroundDownloadTests/BackgroundDownloadTests.csproj": {
-                "projectPath": "/Users/neilmalcolm/Projects/BackgroundDownloadTests/BackgroundDownloadTests/BackgroundDownloadTests.csproj"
+              "C:\\Users\\Neil\\source\\repos\\NeilMalcolm\\Background-Task-Tests\\BackgroundDownloadTests\\BackgroundDownloadTests.csproj": {
+                "projectPath": "C:\\Users\\Neil\\source\\repos\\NeilMalcolm\\Background-Task-Tests\\BackgroundDownloadTests\\BackgroundDownloadTests.csproj"
               }
             }
           }
@@ -36,6 +43,10 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "Rg.Plugins.Popup": {
+              "target": "Package",
+              "version": "[2.0.0.12, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
@@ -59,23 +70,30 @@
         }
       }
     },
-    "/Users/neilmalcolm/Projects/BackgroundDownloadTests/BackgroundDownloadTests/BackgroundDownloadTests.csproj": {
+    "C:\\Users\\Neil\\source\\repos\\NeilMalcolm\\Background-Task-Tests\\BackgroundDownloadTests\\BackgroundDownloadTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/neilmalcolm/Projects/BackgroundDownloadTests/BackgroundDownloadTests/BackgroundDownloadTests.csproj",
+        "projectUniqueName": "C:\\Users\\Neil\\source\\repos\\NeilMalcolm\\Background-Task-Tests\\BackgroundDownloadTests\\BackgroundDownloadTests.csproj",
         "projectName": "BackgroundDownloadTests",
-        "projectPath": "/Users/neilmalcolm/Projects/BackgroundDownloadTests/BackgroundDownloadTests/BackgroundDownloadTests.csproj",
-        "packagesPath": "/Users/neilmalcolm/.nuget/packages/",
-        "outputPath": "/Users/neilmalcolm/Projects/BackgroundDownloadTests/BackgroundDownloadTests/obj/",
+        "projectPath": "C:\\Users\\Neil\\source\\repos\\NeilMalcolm\\Background-Task-Tests\\BackgroundDownloadTests\\BackgroundDownloadTests.csproj",
+        "packagesPath": "C:\\Users\\Neil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Neil\\source\\repos\\NeilMalcolm\\Background-Task-Tests\\BackgroundDownloadTests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/neilmalcolm/.config/NuGet/NuGet.Config"
+          "C:\\Users\\Neil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -100,6 +118,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Rg.Plugins.Popup": {
+              "target": "Package",
+              "version": "[2.0.0.12, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
@@ -119,7 +141,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-preview.7.21379.14/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

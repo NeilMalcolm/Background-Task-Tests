@@ -7,7 +7,7 @@
 
     public class ParallelAsyncTask : BaseTask
     {
-        private IList<Task<bool>> _tasks;
+        private IList<TaskRunner> _tasks;
 
         private int _taskProgress = 0;
         public int TaskProgress
@@ -17,12 +17,19 @@
             {
                 _taskProgress = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(TaskProgressAsFloat));
             }
+        }
+        
+        public float TaskProgressAsFloat
+        {
+            get => _taskProgress == 0 ? 0 : (float)_taskProgress / (float)TotalTasks;
         }
 
         public int TotalTasks => _tasks?.Count ?? 0;
 
-        public ParallelAsyncTask(IList<Task<bool>> tasks)
+        public ParallelAsyncTask(string text, params TaskRunner[] tasks)
+            : base(text)
         {
             _tasks = tasks;
         }
@@ -40,7 +47,7 @@
                 IsRunning = true;
                 foreach (var task in _tasks)
                 {
-                    success |= await task;
+                    success |= await task.Invoke();
                     TaskProgress++;
                 }
             }

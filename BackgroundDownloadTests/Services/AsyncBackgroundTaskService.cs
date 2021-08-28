@@ -10,7 +10,7 @@ namespace BackgroundDownloadTests.Services
 {
     public class AsyncBackgroundTaskService : IAsyncBackgroundTaskService, INotifyPropertyChanged
     {
-        private ObservableCollection<BaseTask> _runningTasks;
+        private ObservableCollection<BaseTask> _runningTasks = new ObservableCollection<BaseTask>();
 
         public ObservableCollection<BaseTask> RunningTasks
         {
@@ -22,7 +22,7 @@ namespace BackgroundDownloadTests.Services
             }
         }
 
-        public bool IsRunning => RunningTasks.Any();
+        public bool IsRunning => RunningTasks?.Any(x => x.IsRunning) ?? false;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -33,11 +33,11 @@ namespace BackgroundDownloadTests.Services
         public void AddNewTask(BaseTask newTask)
         {
             RunningTasks.Add(newTask);
-
             // fire and forget.
             Task.Run(async () => {
+                newTask.IsRunning = true;
+                OnPropertyChanged(nameof(IsRunning));
                 await newTask.RunTask();
-                RunningTasks.Remove(newTask);
                 OnPropertyChanged(nameof(IsRunning));
             });
         }
@@ -45,6 +45,15 @@ namespace BackgroundDownloadTests.Services
         protected void OnPropertyChanged([CallerMemberName]string propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public void ClearFinishedTasks()
+        {
+            var tasks = RunningTasks.Where(x => !x.IsRunning).ToList();
+            foreach (var finishedTask in tasks)
+            {
+                RunningTasks.Remove(finishedTask);
+            }
         }
     }
 }

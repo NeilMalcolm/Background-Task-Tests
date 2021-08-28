@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
-using UIKit;
-
-namespace BackgroundDownloadTests.iOS
+﻿namespace BackgroundDownloadTests.iOS
 {
+    using Foundation;
+    using UIKit;
+
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 
     // application events from iOS.
@@ -22,6 +18,7 @@ namespace BackgroundDownloadTests.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            Rg.Plugins.Popup.Popup.Init();
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

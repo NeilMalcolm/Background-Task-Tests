@@ -4,17 +4,17 @@
 
     public class AsyncTask : BaseTask
     {
-        private Task<bool> _task;
+        private TaskRunner _task;
 
-        public AsyncTask(Task<bool> task)
-            : base()
+        public AsyncTask(string text, TaskRunner task)
+            : base(text)
         {
             _task = task;
         }
 
         protected override Task<bool> Run()
         {
-            return _task;
+            return _task.Invoke();
         }
     }
 }

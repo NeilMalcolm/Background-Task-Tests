@@ -1,18 +1,64 @@
-﻿using System;
+﻿using BackgroundDownloadTests.Models;
+using BackgroundDownloadTests.Services;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using System.Windows.Input;
-using Xamarin.Essentials;
 using Xamarin.Forms;
+using static BackgroundDownloadTests.Models.BaseTask;
 
 namespace BackgroundDownloadTests.ViewModels
 {
     public class AboutViewModel : BaseViewModel
     {
-        public AboutViewModel()
+        private readonly IAsyncBackgroundTaskService _backgroundTaskService;
+        public AboutViewModel() : this(DependencyService.Get<IAsyncBackgroundTaskService>())
         {
             Title = "About";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
+            StartDownloadCommand = new Command(BeginDownload);
+            StartParallelDownloadCommand = new Command(BeginParallelDownload);
         }
 
-        public ICommand OpenWebCommand { get; }
+        private AboutViewModel(IAsyncBackgroundTaskService backgroundTaskService)
+        {
+            _backgroundTaskService = backgroundTaskService;
+        }
+
+        public ICommand StartDownloadCommand { get; }
+        
+        public ICommand StartParallelDownloadCommand { get; }
+
+        public void BeginDownload()
+        {
+            var newTask = new AsyncTask("Download", DoThing);
+            _backgroundTaskService.AddNewTask(newTask);
+        }
+        
+        public void BeginParallelDownload()
+        {
+            var newTask = new ParallelAsyncTask("Parallel Download", 
+                DoParallelThing, 
+                DoParallelThing, 
+                DoParallelThing,
+                DoParallelThing,
+                DoParallelThing,
+                DoParallelThing,
+                DoParallelThing,
+                DoParallelThing,
+                DoParallelThing
+            );
+            _backgroundTaskService.AddNewTask(newTask);
+        }
+
+        public async Task<bool> DoThing()
+        {
+            await Task.Delay(2500);
+            return true;
+        }
+
+        public async Task<bool> DoParallelThing()
+        {
+            await Task.Delay(1500);
+            return true;
+        }
     }
 }

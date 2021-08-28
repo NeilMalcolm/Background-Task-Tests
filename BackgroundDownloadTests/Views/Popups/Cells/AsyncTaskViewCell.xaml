@@ -1,0 +1,20 @@
+﻿<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          x:Class="BackgroundDownloadTests.Views.Popups.Cells.AsyncTaskViewCell"
+          xmlns:helpers="clr-namespace:BackgroundDownloadTests.Helpers">
+    <ViewCell.View>
+        <StackLayout Orientation="Horizontal"
+                     Padding="10">
+            <StackLayout.Resources>
+                <helpers:InverseBoolConverter x:Key="InverseBoolConverter"/>
+            </StackLayout.Resources>
+            <Label Text="{Binding Text}" 
+                   TextColor="Black"/>
+            <Label Text="Done" 
+                   TextColor="Black"
+                   IsVisible="{Binding IsRunning, 
+                                       Converter={StaticResource InverseBoolConverter}}"
+                   HorizontalOptions="EndAndExpand"/>
+        </StackLayout>
+  </ViewCell.View>
+</ViewCell>

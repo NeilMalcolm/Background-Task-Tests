@@ -8,5 +8,6 @@ namespace BackgroundDownloadTests.Services
         ObservableCollection<BaseTask> RunningTasks { get; }
         bool IsRunning { get; }
         void AddNewTask(BaseTask newTask);
+        void ClearFinishedTasks();
     }
 }

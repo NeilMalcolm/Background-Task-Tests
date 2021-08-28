@@ -1,0 +1,31 @@
+﻿<popup:PopupPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BackgroundDownloadTests.Views.Popups.RunningTasksPopup"
+             xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:dts="clr-namespace:BackgroundDownloadTests.Helpers">
+    <popup:PopupPage.Content>
+        <Grid BackgroundColor="White"   
+              WidthRequest="280"
+              HeightRequest="450"
+              HorizontalOptions="Center"
+              VerticalOptions="Center"
+              ColumnDefinitions="*, 40"
+              RowDefinitions="40, *">
+            <Label Text="Downloads"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+            <Button Text="x"
+                    Command="{Binding ClearFinishedTasksCommand}"
+                    Grid.Column="1"/>
+            <ListView ItemsSource="{Binding Service.RunningTasks}"
+                      Grid.Row="1"
+                      Grid.ColumnSpan="2"
+                      HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <dts:TasksDataTemplateSelector />
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+  </popup:PopupPage.Content>
+</popup:PopupPage>

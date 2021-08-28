@@ -1,0 +1,26 @@
+﻿<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BackgroundDownloadTests.Views.Popups.Cells.ParallelAsyncTaskViewCell">
+    <ViewCell.View>
+      <Grid ColumnDefinitions="*, 50"
+            RowDefinitions="*, *"
+            Padding="10">
+            <Label Text="{Binding Text}" 
+                   Grid.ColumnSpan="2"
+                   TextColor="Black"/>
+            <ProgressBar Progress="{Binding TaskProgressAsFloat}"
+                         Grid.Row="1"/>
+            <Label Grid.Row="1"
+                   Grid.Column="1"
+                   TextColor="Black">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="{Binding TaskProgress}"/>
+                        <Span Text=" of "/>
+                        <Span Text="{Binding TotalTasks}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </Grid>
+  </ViewCell.View>
+</ViewCell>

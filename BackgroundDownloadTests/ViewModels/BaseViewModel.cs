@@ -1,18 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-
-using Xamarin.Forms;
-
-using BackgroundDownloadTests.Models;
-using BackgroundDownloadTests.Services;
-
-namespace BackgroundDownloadTests.ViewModels
+﻿namespace BackgroundDownloadTests.ViewModels
 {
+    using BackgroundDownloadTests.Models;
+    using BackgroundDownloadTests.Services;
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel;
+    using System.Runtime.CompilerServices;
+    using Xamarin.Forms;
+
     public class BaseViewModel : INotifyPropertyChanged
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+
+        public AsyncBackgroundTaskViewModel BackgroundTaskViewModel { get; } 
 
         bool isBusy = false;
         public bool IsBusy
@@ -39,6 +39,11 @@ namespace BackgroundDownloadTests.ViewModels
             onChanged?.Invoke();
             OnPropertyChanged(propertyName);
             return true;
+        }
+
+        public BaseViewModel() 
+        {
+            BackgroundTaskViewModel = new AsyncBackgroundTaskViewModel();
         }
 
         #region INotifyPropertyChanged

@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.0.0.12" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
@@ -14,5 +15,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\AsyncToolbar\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\Popups\Cells\ParallelAsyncTaskViewCell.xaml.cs">
+      <DependentUpon>ParallelAsyncTaskViewCell.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Views\DefaultTitleView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Popups\Cells\AsyncTaskViewCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Popups\RunningTasksPopup.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

@@ -10,7 +10,7 @@
     
         https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
     -->
-
+    
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">

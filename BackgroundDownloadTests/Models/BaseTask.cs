@@ -7,6 +7,8 @@
 
     public abstract class BaseTask : INotifyPropertyChanged
     {
+        public delegate Task<bool> TaskRunner();
+
         public Guid Id { get; private set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -22,8 +24,20 @@
             }
         }
 
-        public BaseTask()
+        private string _text;
+        public string Text
         {
+            get => _text;
+            private set
+            {
+                _text = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public BaseTask(string text)
+        {
+            _text = text;
             Id = Guid.NewGuid();
         }
 
