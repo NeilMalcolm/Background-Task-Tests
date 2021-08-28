@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = BackgroundDownloadTests
+build_property.ProjectDir = /Users/neilmalcolm/Projects/BackgroundDownloadTests/BackgroundDownloadTests/
