@@ -22,7 +22,7 @@
             Rg.Plugins.Popup.Popup.Init();
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-
+            UIPageControl v = new UIPageControl();
             return base.FinishedLaunching(app, options);
         }
     }
