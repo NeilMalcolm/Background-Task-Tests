@@ -45,7 +45,6 @@ C:/Users/Neil/source/repos/NeilMalcolm/Background-Task-Tests/BackgroundDownloadT
 /Users/neilmalcolm/Documents/GitHub/Background-Task-Tests/BackgroundDownloadTests/bin/Debug/netstandard2.0/BackgroundDownloadTests.dll
 /Users/neilmalcolm/Documents/GitHub/Background-Task-Tests/BackgroundDownloadTests/bin/Debug/netstandard2.0/ref/BackgroundDownloadTests.dll
 /Users/neilmalcolm/Documents/GitHub/Background-Task-Tests/BackgroundDownloadTests/bin/Debug/netstandard2.0/BackgroundDownloadTests.pdb
-/Users/neilmalcolm/Documents/GitHub/Background-Task-Tests/BackgroundDownloadTests/obj/Debug/netstandard2.0/BackgroundDownloadTests.csproj.AssemblyReference.cache
 /Users/neilmalcolm/Documents/GitHub/Background-Task-Tests/BackgroundDownloadTests/obj/Debug/netstandard2.0/BackgroundDownloadTests.GeneratedMSBuildEditorConfig.editorconfig
 /Users/neilmalcolm/Documents/GitHub/Background-Task-Tests/BackgroundDownloadTests/obj/Debug/netstandard2.0/App.xaml.g.cs
 /Users/neilmalcolm/Documents/GitHub/Background-Task-Tests/BackgroundDownloadTests/obj/Debug/netstandard2.0/AppShell.xaml.g.cs

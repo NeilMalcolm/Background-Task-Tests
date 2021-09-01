@@ -16,6 +16,7 @@ namespace BackgroundDownloadTests.ViewModels
             Title = "About";
             StartDownloadCommand = new Command(BeginDownload);
             StartParallelDownloadCommand = new Command(BeginParallelDownload);
+            GoToCarouselCommand = new Command(async () => await GoToCarousel());
         }
 
         private AboutViewModel(IAsyncBackgroundTaskService backgroundTaskService)
@@ -24,8 +25,8 @@ namespace BackgroundDownloadTests.ViewModels
         }
 
         public ICommand StartDownloadCommand { get; }
-        
         public ICommand StartParallelDownloadCommand { get; }
+        public ICommand GoToCarouselCommand { get; }
 
         public void BeginDownload()
         {
@@ -59,6 +60,23 @@ namespace BackgroundDownloadTests.ViewModels
         {
             await Task.Delay(1500);
             return true;
+        }
+
+        private Task GoToCarousel()
+        {
+            return Application.Current.MainPage.Navigation.PushAsync(new NavigationPage(new ContentPage
+            {
+                Content = new CarouselView
+                {
+                    ItemsSource = new string[] { "hello", "hello 2", "hello 3" },
+                    IndicatorView = new IndicatorView
+                    {
+                        BackgroundColor = Color.Red,
+                        HeightRequest = 30,
+                        WidthRequest = 30
+                    }
+                }
+            }));
         }
     }
 }

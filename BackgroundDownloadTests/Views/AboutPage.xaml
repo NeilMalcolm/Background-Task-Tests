@@ -52,6 +52,11 @@
                         Command="{Binding StartParallelDownloadCommand}"
                         BackgroundColor="{StaticResource Primary}"
                         TextColor="White" />
+                <Button Margin="0,10,0,0" 
+                        Text="Go To Carousel"
+                        Command="{Binding GoToCarouselCommand}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
                 <IndicatorView x:Name="Indicator"/>
             </StackLayout>
         </ScrollView>

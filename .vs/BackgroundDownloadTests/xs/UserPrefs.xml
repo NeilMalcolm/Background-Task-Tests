@@ -1,17 +1,21 @@
-﻿<Properties StartupConfiguration="{2ED08F19-9F31-4435-9C3B-09573264E127}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BackgroundDownloadTests.iOS/AppDelegate.cs">
+﻿<Properties StartupConfiguration="{2338BF23-8D18-41E9-8172-02DC4EDDFEED}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BackgroundDownloadTests/Views/AboutPage.xaml">
     <Files>
       <File FileName="BackgroundDownloadTests.iOS/AppDelegate.cs" Line="25" Column="51" />
-      <File FileName="BackgroundDownloadTests/Views/AboutPage.xaml" Line="58" Column="12" />
+      <File FileName="BackgroundDownloadTests/ViewModels/AboutViewModel.cs" Line="19" Column="13" />
+      <File FileName="BackgroundDownloadTests/Views/AboutPage.xaml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BackgroundDownloadTests" expanded="True">
-            <Node name="BackgroundDownloadTests" expanded="True" />
-            <Node name="BackgroundDownloadTests.iOS" expanded="True">
-              <Node name="AppDelegate.cs" selected="True" />
+            <Node name="BackgroundDownloadTests" expanded="True">
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="AboutPage.xaml" selected="True" />
+              </Node>
             </Node>
+            <Node name="BackgroundDownloadTests.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -20,7 +24,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.BackgroundDownloadTests.Android PreferredExecutionTarget="Android.Android_Emulator_30" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.BackgroundDownloadTests.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget." />
+  <MonoDevelop.Ide.ItemProperties.BackgroundDownloadTests.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.00008101-001108C41404001E" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
