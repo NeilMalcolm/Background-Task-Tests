@@ -13,7 +13,7 @@
 namespace BackgroundDownloadTests.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\LoginPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/LoginPage.xaml")]
     public partial class LoginPage : global::BackgroundDownloadTests.Views.BaseContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

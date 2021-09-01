@@ -43,7 +43,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2012": {
+      "Xamarin.Forms/5.0.0.2083": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -172,7 +172,7 @@
         "dependencies": {
           "Rg.Plugins.Popup": "2.0.0.12",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2083"
         },
         "compile": {
           "bin/placeholder/BackgroundDownloadTests.dll": {}
@@ -224,7 +224,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2012": {
+      "Xamarin.Forms/5.0.0.2083": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -353,7 +353,7 @@
         "dependencies": {
           "Rg.Plugins.Popup": "2.0.0.12",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2083"
         },
         "compile": {
           "bin/placeholder/BackgroundDownloadTests.dll": {}
@@ -405,7 +405,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2012": {
+      "Xamarin.Forms/5.0.0.2083": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -534,7 +534,7 @@
         "dependencies": {
           "Rg.Plugins.Popup": "2.0.0.12",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2083"
         },
         "compile": {
           "bin/placeholder/BackgroundDownloadTests.dll": {}
@@ -586,7 +586,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.2012": {
+      "Xamarin.Forms/5.0.0.2083": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -715,7 +715,7 @@
         "dependencies": {
           "Rg.Plugins.Popup": "2.0.0.12",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2083"
         },
         "compile": {
           "bin/placeholder/BackgroundDownloadTests.dll": {}
@@ -873,10 +873,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/5.0.0.2012": {
-      "sha512": "Rqc6xvWR/sf+Db5+qRCFmuYTWVp04QWRfwPto2/JHbShSy4Ed53Q2jpoFzsoloXkJA6saD236PlaWAhT6vI4gw==",
+    "Xamarin.Forms/5.0.0.2083": {
+      "sha512": "KDKdEIq8SA3zP8/qyJZ9isIsP1KRLvhxUohTM4GS4HOQkkK3FARvi/FJv91O4IJ/30ByJg88mBdKuiLMyL9Q+w==",
       "type": "package",
-      "path": "xamarin.forms/5.0.0.2012",
+      "path": "xamarin.forms/5.0.0.2083",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1085,7 +1085,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.5.0.0.2012.nupkg.sha512",
+        "xamarin.forms.5.0.0.2083.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -1100,33 +1100,24 @@
       "BackgroundDownloadTests >= 1.0.0",
       "Rg.Plugins.Popup >= 2.0.0.12",
       "Xamarin.Essentials >= 1.6.1",
-      "Xamarin.Forms >= 5.0.0.2012"
+      "Xamarin.Forms >= 5.0.0.2083"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Neil\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/neilmalcolm/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Neil\\source\\repos\\NeilMalcolm\\Background-Task-Tests\\BackgroundDownloadTests.iOS\\BackgroundDownloadTests.iOS.csproj",
+      "projectUniqueName": "/Users/neilmalcolm/Documents/GitHub/Background-Task-Tests/BackgroundDownloadTests.iOS/BackgroundDownloadTests.iOS.csproj",
       "projectName": "BackgroundDownloadTests.iOS",
-      "projectPath": "C:\\Users\\Neil\\source\\repos\\NeilMalcolm\\Background-Task-Tests\\BackgroundDownloadTests.iOS\\BackgroundDownloadTests.iOS.csproj",
-      "packagesPath": "C:\\Users\\Neil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Neil\\source\\repos\\NeilMalcolm\\Background-Task-Tests\\BackgroundDownloadTests.iOS\\obj\\",
+      "projectPath": "/Users/neilmalcolm/Documents/GitHub/Background-Task-Tests/BackgroundDownloadTests.iOS/BackgroundDownloadTests.iOS.csproj",
+      "packagesPath": "/Users/neilmalcolm/.nuget/packages/",
+      "outputPath": "/Users/neilmalcolm/Documents/GitHub/Background-Task-Tests/BackgroundDownloadTests.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Neil\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/neilmalcolm/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -1137,8 +1128,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Neil\\source\\repos\\NeilMalcolm\\Background-Task-Tests\\BackgroundDownloadTests\\BackgroundDownloadTests.csproj": {
-              "projectPath": "C:\\Users\\Neil\\source\\repos\\NeilMalcolm\\Background-Task-Tests\\BackgroundDownloadTests\\BackgroundDownloadTests.csproj"
+            "/Users/neilmalcolm/Documents/GitHub/Background-Task-Tests/BackgroundDownloadTests/BackgroundDownloadTests.csproj": {
+              "projectPath": "/Users/neilmalcolm/Documents/GitHub/Background-Task-Tests/BackgroundDownloadTests/BackgroundDownloadTests.csproj"
             }
           }
         }
@@ -1157,7 +1148,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[5.0.0.2012, )"
+            "version": "[5.0.0.2083, )"
           }
         }
       }

@@ -13,7 +13,7 @@
 namespace BackgroundDownloadTests.Views.Popups.Cells {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Popups\\Cells\\ParallelAsyncTaskViewCell.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/Popups/Cells/ParallelAsyncTaskViewCell.xaml")]
     public partial class ParallelAsyncTaskViewCell : global::Xamarin.Forms.ViewCell {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

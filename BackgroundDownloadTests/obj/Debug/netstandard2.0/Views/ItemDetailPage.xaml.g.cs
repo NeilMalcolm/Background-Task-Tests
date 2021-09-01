@@ -13,7 +13,7 @@
 namespace BackgroundDownloadTests.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\ItemDetailPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/ItemDetailPage.xaml")]
     public partial class ItemDetailPage : global::BackgroundDownloadTests.Views.BaseContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

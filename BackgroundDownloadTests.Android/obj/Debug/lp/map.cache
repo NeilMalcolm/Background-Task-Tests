@@ -86,3 +86,12 @@ androidx.asynclayoutinflater.asynclayoutinflater.aar
 androidx.legacy.legacy-support-core-ui.aar
 androidx.legacy.legacy-support-v4.aar
 androidx.browser.browser.aar
+Rg.Plugins.Popup.dll
+Xamarin.AndroidX.Navigation.Common.dll
+Xamarin.AndroidX.Navigation.Runtime.dll
+Xamarin.AndroidX.Navigation.UI.dll
+Xamarin.AndroidX.Preference.dll
+androidx.preference.preference.aar
+androidx.navigation.navigation-common.aar
+androidx.navigation.navigation-runtime.aar
+androidx.navigation.navigation-ui.aar

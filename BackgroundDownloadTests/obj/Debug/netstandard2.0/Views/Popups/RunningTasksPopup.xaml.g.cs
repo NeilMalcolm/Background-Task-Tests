@@ -13,7 +13,7 @@
 namespace BackgroundDownloadTests.Views.Popups {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Popups\\RunningTasksPopup.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/Popups/RunningTasksPopup.xaml")]
     public partial class RunningTasksPopup : global::Rg.Plugins.Popup.Pages.PopupPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

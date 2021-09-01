@@ -13,7 +13,7 @@
 namespace BackgroundDownloadTests.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\DefaultTitleView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/DefaultTitleView.xaml")]
     public partial class DefaultTitleView : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
