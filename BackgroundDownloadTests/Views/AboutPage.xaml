@@ -52,6 +52,7 @@
                         Command="{Binding StartParallelDownloadCommand}"
                         BackgroundColor="{StaticResource Primary}"
                         TextColor="White" />
+                <IndicatorView x:Name="Indicator"/>
             </StackLayout>
         </ScrollView>
     </Grid>

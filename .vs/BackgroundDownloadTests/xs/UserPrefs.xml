@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{2338BF23-8D18-41E9-8172-02DC4EDDFEED}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BackgroundDownloadTests/Views/AboutPage.xaml">
+    <Files>
+      <File FileName="BackgroundDownloadTests.iOS/AppDelegate.cs" Line="21" Column="41" />
+      <File FileName="BackgroundDownloadTests/Views/AboutPage.xaml" Line="55" Column="18" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BackgroundDownloadTests" expanded="True">
+            <Node name="BackgroundDownloadTests" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="AboutPage.xaml" selected="True" />
+              </Node>
+            </Node>
+            <Node name="BackgroundDownloadTests.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BackgroundDownloadTests.Android PreferredExecutionTarget="Android.Android_Emulator_30" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
